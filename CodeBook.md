@@ -1,5 +1,7 @@
 #    Two datasets are created and saved:
 
+(NOTE: The second dataset, #2 below - "HARUS_SummaryData.txt", is the course project dataset)
+
 ##       1. HARUS_data.txt
 
           Test and train measurements, combined, with activity and subject number.
