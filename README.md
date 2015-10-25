@@ -8,7 +8,7 @@ Included in this repository are an R script (run_analysis.R) and a code book (Co
 Data from "Human Activity Recognition Using Smartphones" can be found at:
    (https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip)
    
-   Directions:
+      Directions:
        1. Copy the zip file from the above link to a directory.
        2. Copy script (run_analysis.R) to same directory.
        3. Run script (run_analysis.R) in R.
