@@ -54,22 +54,23 @@
 library(dplyr)
 
 # load test data
-test_subj <- read.table("data/test/subject_test.txt",header=F)     # file with test subjects
-test_act <- read.table("data/test/y_test.txt",header=F,col.names=c("Act_ID"))      # file with test activities
-test_meas <- read.table("data/test/X_test.txt",header=F)           # file with test measurements
+zipfile <- "UCI HAR Dataset.zip"
+test_subj <- read.table(unz(zipfile,filename="UCI HAR Dataset/test/subject_test.txt"),header=F)     # file with test subjects
+test_act <- read.table(unz(zipfile,filename="UCI HAR Dataset/test/y_test.txt"),header=F,col.names=c("Act_ID"))      # file with test activities
+test_meas <- read.table(unz(zipfile,filename="UCI HAR Dataset/test/X_test.txt"),header=F)           # file with test measurements
 test_data <- cbind(test_subj,test_act,test_meas)                   # combine subject ID, activity ID and measurements
 
 # load train data
-train_subj <- read.table("data/train/subject_train.txt",header=F)  # file with train subjects
-train_act <- read.table("data/train/y_train.txt",header=F,col.names=c("Act_ID"))   # file with train activities
-train_meas <- read.table("data/train/X_train.txt",header=F)        # file with train measurements
+train_subj <- read.table(unz(zipfile,filename="UCI HAR Dataset/train/subject_train.txt"),header=F)  # file with train subjects
+train_act <- read.table(unz(zipfile,filename="UCI HAR Dataset/train/y_train.txt"),header=F,col.names=c("Act_ID"))   # file with train activities
+train_meas <- read.table(unz(zipfile,filename="UCI HAR Dataset/train/X_train.txt"),header=F)        # file with train measurements
 train_data <- cbind(train_subj,train_act,train_meas)               # combine subject ID, activity ID and measurements
 
 # combine test and train data
 all_data <- rbind(test_data,train_data)
 
 # read in measurement labels and apply nice names to columns in measurement data tables
-meas_labels <- read.table("data/features.txt",header=F)                  # labels for measurements (columns in measurement files)
+meas_labels <- read.table(unz(zipfile,filename="UCI HAR Dataset/features.txt"),header=F)  # labels for measurements (columns in measurement files)
 names(meas_labels) <- c("Meas_ID","Measurement")                         # label columns in measurement labels lookup
 meas_labels$Measurement <- gsub("[()]","",meas_labels$Measurement)       # drop ()s from name
 meas_labels$Measurement <- gsub("[-,]","_",meas_labels$Measurement)      # change dashes and commas to periods to make nice names
@@ -78,7 +79,7 @@ meas_names <- c("Subject","Act_ID",as.vector(meas_labels$Measurement))   # make 
 names(all_data) <- meas_names                                            # apply column names to combined data set
 
 # load activity codes
-activity_codes <- read.table("data/activity_labels.txt",header=F)  # codelist for activities
+activity_codes <- read.table(unz(zipfile,filename="UCI HAR Dataset/activity_labels.txt"),header=F)  # codelist for activities
 names(activity_codes) <- c("Act_ID","Activity")
 
 # add activity text description
