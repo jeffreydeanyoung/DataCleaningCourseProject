@@ -38,7 +38,7 @@
 
 ##       2. HARUS_SummaryData.txt
 
-          Same as dataset 1 (collapsed by subject/activity).  Means of all measurement 
+          Same as dataset 1, collapsed by subject/activity.  Means of all measurement 
           variables are computed by subject and activity, giving one record per subject/activity 
-          and 66 parameter variables as above.
+          and 66 parameter variables as above (180 total observations).
 
