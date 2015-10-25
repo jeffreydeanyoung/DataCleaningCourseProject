@@ -10,3 +10,4 @@ Data from "Human Activity Recognition Using Smartphones" can be found at:
    Copy the zip file containing the data to a directory, copy script to same directory and run in R.
    
    Two .txt files will be created, HARUS_data.txt and HARUS_SummaryData.txt as described in CodeBook.md.
+   The second dataset, HARUS_SummaryData.txt, is the solution dataset for the course project.
