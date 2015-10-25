@@ -8,8 +8,10 @@
           Subject, Activity, (33 parameters with mean and std)
 
               Subject      (interger - 1 through 30)
-              Activity     (text - one of six possible values indicating reported activity at time of measurement)
-                              (LAYING, SITTING, STANDING, WALKING, WALKING_DOWNSTAIRS, WALKING_UPSTAIRS)
+              Activity     (text - one of six possible values indicating reported 
+                                   activity at time of measurement)
+                           (LAYING, SITTING, STANDING, WALKING, 
+                              WALKING_DOWNSTAIRS, WALKING_UPSTAIRS)
 
                  (numeric - variables below have _mean and _std versions - values are numeric in units of 
                             g = gravitational units) [66 total variables]
