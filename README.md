@@ -7,7 +7,11 @@ Included in this repository are an R script (run_analysis.R) and a code book (Co
 
 Data from "Human Activity Recognition Using Smartphones" can be found at:
    (https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip)
-   Copy the zip file containing the data to a directory, copy script to same directory and run in R.
    
-   Two .txt files will be created, HARUS_data.txt and HARUS_SummaryData.txt as described in CodeBook.md.
-   The second dataset, HARUS_SummaryData.txt, is the solution dataset for the course project.
+   Directions:
+       1. Copy the zip file from the above link to a directory.
+       2. Copy script (run_analysis.R) to same directory.
+       3. Run script (run_analysis.R) in R.
+   
+       Two .txt files will be created, HARUS_data.txt and HARUS_SummaryData.txt as described in CodeBook.md.
+       The second dataset, HARUS_SummaryData.txt, is the solution dataset for the course project.
