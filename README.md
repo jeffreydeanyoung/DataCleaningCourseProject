@@ -3,7 +3,7 @@ Getting and Cleaning Data - Course Project
 
 This project reads data from the "Human Activity Recognition Using Smartphones" project and creates a summary analysis dataset.
 
-Included in this repository are an R script (run_analysis.R) and a code book (CodeBook.md) describing the dataset created by run_analysis.R.
+Included in this repository are an R script (run_analysis.R) and a code book (CodeBook.md) describing the datasets created by run_analysis.R.
 
 Data from "Human Activity Recognition Using Smartphones" can be found at:
    (https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip)
